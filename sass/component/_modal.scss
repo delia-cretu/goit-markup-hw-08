@@ -27,14 +27,20 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 15px;
-  max-width: 450px;
+  max-width: calc(100% - 30px);
   padding: 40px;
   position: absolute;
 }
 
+@media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint) {
+  .modal__content {
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: $desktop-breakpoint) {
   .modal__content {
-    max-width: 528px;
+    width: 528px;
   }
 }
 
