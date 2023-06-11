@@ -1,0 +1,23 @@
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  &--team-section {
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+  &--global-footer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .social-icon-list--global-footer {
+    justify-content: left;
+  }
+}
+
+.icon--social {
+  height: 20px;
+  width: 20px;
+}

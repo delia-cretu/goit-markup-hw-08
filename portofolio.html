@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!-- Page header -->
+    <header class="global-header global-header--portofolio">
+      <div class="container container--global-header">
+        <div class="global-header__logo-and-navigation">
+          <!-- Logo -->
+          <div class="logo logo--global-header">
+            <svg>
+              <use href="images/symbol-defs.svg#icon-logo-header"></use>
+            </svg>
+          </div>
+
+          <!-- Navigation bar-->
+          <nav class="global-header__navigation">
+            <ul class="global-header__menu">
+              <li class="global-header__menu-item">
+                <a
+                  href="index.html"
+                  class="link link--menu link--global-header"
+                >
+                  Studio
+                </a>
+              </li>
+              <li class="global-header__menu-item">
+                <a
+                  href="portofolio.html"
+                  class="link link--menu link--global-header link--active"
+                >
+                  Portofolio
+                </a>
+              </li>
+              <li class="global-header__menu-item">
+                <a
+                  href="contacts.html"
+                  class="link link--menu link--global-header"
+                >
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Contacts -->
+        <div class="global-header__contacts">
+          <ul class="global-header__contacts-list">
+            <li class="global-header__contacts-item">
+              <a
+                class="link link--contacts link--global-header"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="icon--contacts icon--email">
+                  <use href="images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="global-header__contacts-item">
+              <a
+                class="link link--contacts link--global-header"
+                href="tel:+12127724150"
+              >
+                <svg class="icon--contacts icon--phone">
+                  <use href="images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Toggle menu -->
+        <button type="button" class="button--toggle-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon--toggle-menu-open"><use href="images/menu.svg"></use></svg>
+          <!-- <i data-feather="circle" class="icon--toggle-menu-open"></i> -->
+        </button>
+        
+        <div class="toggle-menu">
+          <button class="button--toggle-menu-close">&times;</button>
+
+          <ul class="toggle-menu__navigation-list list">
+            <li class="toggle-menu__navigation-item">
+              <a
+                href="index.html"
+                class="link link--global-header"
+              >
+                Studio
+              </a>
+            </li>
+            <li class="toggle-menu__navigation-item">
+              <a
+                href="portofolio.html"
+                class="link link--global-header"
+              >
+                Portofolio
+              </a>
+            </li>
+            <li class="toggle-menu__navigation-item">
+              <a
+                href="contacts.html"
+                class="link link--global-header"
+              >
+                Contacts
+              </a>
+            </li>
+          </ul>
+            
+          <ul class="toggle-menu__contacts-list list">
+            <li class="toggle-menu__contacts-item toggle-menu__contacts-phone">
+              <a
+                class="link"
+                href="tel:+12127724150"
+              >
+                +1 212-772-4150
+              </a>
+            </li>            
+            <li class="toggle-menu__contacts-item toggle-menu__contacts-email">
+              <a
+                class="link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="toggle-menu__social-list list">
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://instagram.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li class="toggle-menu__vertical-line"></li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Twitter
+              </a>
+            </li>
+            <li class="toggle-menu__vertical-line"></li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Facebook
+              </a>
+            </li>
+            <li class="toggle-menu__vertical-line"></li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- Portofolio -->
+      <section class="section portofolio-section">
+        <div class="container">
+          <!-- Filter buttons -->
+          <div>
+            <ul class="filter-button__list list">
+              <li>
+                <button type="button" class="filter-button__item filter-button__item--active">All</button>
+              </li>
+              <li>
+                <button type="button" class="filter-button__item">Web-sites</button>
+              </li>
+              <li>
+                <button type="button" class="filter-button__item">Apps</button>
+              </li>
+              <li>
+                <button type="button" class="filter-button__item">Design</button>
+              </li>
+              <li>
+                <button type="button" class="filter-button__item">Marketing</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Products -->
+          <div class="products">
+            <ul class="products__list list">
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product1.jpg"
+                    alt="image of laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay">
+                    <p class="products__overlay-text">
+                      Technoduck is a state-of-the-art coronavirus distribution
+                      platform. Companies use this platform for digital
+                      espionage and attacks on competitors' secure servers.
+                    </p>
+                  </div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Technoduck</h3>
+                  <p class="products__subheading">Web-site</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product2.jpg"
+                    alt="image of basketball players"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Poster New Orlean vs Golden Star</h3>
+                  <p class="products__subheading">Design</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product3.jpg"
+                    alt="poster of seafood restaurant"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Seafood Restaurant</h3>
+                  <p class="products__subheading">Apps</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product4.jpg"
+                    alt="image of headphones"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Project Prime</h3>
+                  <p class="products__subheading">Marketing</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product5.jpg"
+                    alt="image of boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Project Boxes</h3>
+                  <p class="products__subheading">Apps</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product6.jpg"
+                    alt="image of a desktop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Inspiration has no Borders</h3>
+                  <p class="products__subheading">Web-sites</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product7.jpg"
+                    alt="image of a magazine"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Limited Edition</h3>
+                  <p class="products__subheading">Design</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product8.jpg"
+                    alt="image of a label"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Project LAB</h3>
+                  <p class="products__subheading">Marketing</p>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__image">
+                  <img
+                    src="images/img-product9.jpg"
+                    alt="image of a laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="products__overlay"></div>
+                </div>
+                <div class="products-text">
+                  <h3 class="products__heading">Growing Business</h3>
+                  <p class="products__subheading">Apps</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Page footer -->
+    <footer class="global-footer">
+      <div class="container container--global-footer">
+        <!-- Logo and address -->
+        <div class="global-footer__column">
+          <div class="logo logo--global-footer">
+            <svg>
+              <use href="images/symbol-defs.svg#icon-logo-footer"></use>
+            </svg>
+          </div>
+
+          <address class="global-footer__contacts">
+            <ul>
+              <li class="global-footer__contacts-item">695 Park Ave, NY 10065, USA</li>
+              <li class="global-footer__contacts-item">
+                <a href="mailto:info@devstudio.com" class="global-footer__contacts-link">info@devstudio.com</a>
+              </li>
+              <li class="global-footer__contacts-item">
+                <a href="tel:2127724150" class="global-footer__contacts-link"> 212-772-4150</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Social media icons -->
+        <div class="global-footer__column">
+          <h3 class="global-footer__subheading">FIND US ON</h3>
+          <ul class="social-icon-list social-icon-list--global-footer">
+            <li>
+              <a
+                class="link link--social link--global-footer"
+                href="https://youtube.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <svg class="icon--social">
+                  <use href="images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link link--social link--global-footer"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <svg class="icon--social">
+                  <use href="images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link link--social link--global-footer"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <svg class="icon--social">
+                  <use href="images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link link--social link--global-footer"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <svg class="icon--social">
+                  <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer-subscribe -->
+        <div class="footer-subscribe">
+          <h3 class="global-footer__subheading">SUBSCRIBE TO THE NEWSLETTER</p>
+          <input
+            placeholder="E-mail"
+            class="global-footer__input"
+            type="email"
+            name="username"
+            required
+          />
+          <button type="button" class="button button--subscribe">
+            Subscribe
+            <svg><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

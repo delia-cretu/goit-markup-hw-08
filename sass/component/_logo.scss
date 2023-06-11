@@ -1,0 +1,13 @@
+.logo svg {
+  width: 134px;
+  height: 28px;
+}
+
+.logo--global-header {
+  padding: 16px 0;
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  .logo--global-header {
+    padding: 26px 0;
+  }
+}

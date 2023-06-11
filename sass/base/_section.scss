@@ -1,0 +1,33 @@
+.section {
+  padding: 60px 0;
+}
+
+.section__heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section__heading + .list {
+  margin-top: 30px;
+}
+
+.section__heading--work-section {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .section {
+    padding: 94px 0;
+  }
+  .section__heading {
+    font-size: 36px;
+  }
+  .section__heading + .list {
+    margin-top: 50px;
+  }
+  .section__heading--work-section {
+    margin-top: 94px;
+  }
+}

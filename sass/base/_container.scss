@@ -1,0 +1,21 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  &--global-header {
+    background: #ffffff;
+    font-size: var(--font-size-sm);
+    display: flex;
+    justify-content: space-between;
+  }
+  &--global-footer {
+    display: flex;
+    gap: 94px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
