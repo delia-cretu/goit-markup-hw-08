@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
@@ -85,8 +81,7 @@
 
         <!-- Toggle menu -->
         <button type="button" class="button--toggle-menu-open" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="icon--toggle-menu-open"><use href="images/menu.svg"></use></svg>
-          <!-- <i data-feather="circle" class="icon--toggle-menu-open"></i> -->
+          <svg class="icon--toggle-menu-open"><use href="images/icon-menu.svg"></use></svg>
         </button>
         
         <div class="toggle-menu">
@@ -359,84 +354,89 @@
     <!-- Page footer -->
     <footer class="global-footer">
       <div class="container container--global-footer">
-        <!-- Logo and address -->
-        <div class="global-footer__column">
-          <div class="logo logo--global-footer">
-            <svg>
-              <use href="images/symbol-defs.svg#icon-logo-footer"></use>
-            </svg>
+
+        <!-- Address and Social icons -->
+        <div class="global-footer__address-and-social-icons">
+
+          <!-- Logo and address -->
+          <div class="global-footer__address">
+            <div class="logo logo--global-footer">
+              <svg>
+                <use href="images/symbol-defs.svg#icon-logo-footer"></use>
+              </svg>
+            </div>
+
+            <address class="address">
+              <ul>
+                <li class="address__item">695 Park Ave, NY 10065, USA</li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+                </li>
+                <li class="address__item">
+                  <a href="tel:2127724150" class="address__link"> 212-772-4150</a>
+                </li>
+              </ul>
+            </address>
           </div>
 
-          <address class="global-footer__contacts">
-            <ul>
-              <li class="global-footer__contacts-item">695 Park Ave, NY 10065, USA</li>
-              <li class="global-footer__contacts-item">
-                <a href="mailto:info@devstudio.com" class="global-footer__contacts-link">info@devstudio.com</a>
+          <!-- Social media icons -->
+          <div class="global-footer__social-icons">
+            <h3 class="global-footer__subheading">FIND US ON</h3>
+            <ul class="social-icon-list social-icon-list--global-footer">
+              <li>
+                <a
+                  class="link link--social link--global-footer"
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="icon--social">
+                    <use href="images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="global-footer__contacts-item">
-                <a href="tel:2127724150" class="global-footer__contacts-link"> 212-772-4150</a>
+              <li>
+                <a
+                  class="link link--social link--global-footer"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="icon--social">
+                    <use href="images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link link--social link--global-footer"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="icon--social">
+                    <use href="images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link link--social link--global-footer"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                >
+                  <svg class="icon--social">
+                    <use href="images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
 
-        <!-- Social media icons -->
-        <div class="global-footer__column">
-          <h3 class="global-footer__subheading">FIND US ON</h3>
-          <ul class="social-icon-list social-icon-list--global-footer">
-            <li>
-              <a
-                class="link link--social link--global-footer"
-                href="https://youtube.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="link link--social link--global-footer"
-                href="https://twitter.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="link link--social link--global-footer"
-                href="https://facebook.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="link link--social link--global-footer"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Footer-subscribe -->
-        <div class="footer-subscribe">
+        <!-- Subscribe -->
+        <div class="global-footer__subscribe">
           <h3 class="global-footer__subheading">SUBSCRIBE TO THE NEWSLETTER</p>
           <input
             placeholder="E-mail"
@@ -445,12 +445,16 @@
             name="username"
             required
           />
-          <button type="button" class="button button--subscribe">
+            <div>
+                        <button type="button" class="button button--subscribe">
             Subscribe
-            <svg><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
+            <svg class="icon--subscribe"><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
           </button>
+            </div>
         </div>
       </div>
     </footer>
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
