@@ -55,29 +55,24 @@
 }
 
 .icon--toggle-menu-open {
-  border: none;
-  color: black;
-  height: 16px;
-  text-align: center;
-  width: 24px;
+  color: #212121;
+  height: 100%;
 }
 
 .button--toggle-menu-open {
-  background-color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   display: flex;
-  padding: 0;
   height: 40px;
-
+  justify-content: center;
   position: absolute;
   top: 13px;
   right: 15px;
+  text-align: center;
   width: 40px;
-  &:hover,
-  &:focus {
-    color: var(--color-active);
-    cursor: pointer;
-  }
-  + .icon--toggle-menu-open {
+  &:hover .icon--toggle-menu-open,
+  &:focus .icon--toggle-menu-open {
     color: var(--color-active);
   }
 }
