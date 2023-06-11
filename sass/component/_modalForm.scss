@@ -45,7 +45,8 @@
   padding-left: 45px;
   position: relative;
   transition: border-color var(--transition);
-  width: 370px;
+  width: 100%;
+  // max-width: 370px;
   &:hover,
   &:focus {
     border-color: var(--color-active);
@@ -69,8 +70,8 @@
   }
 }
 
-@media screen and (min-width: $desktop-breakpoint) {
-  .form__input {
-    width: 448px;
-  }
-}
+// @media screen and (min-width: $desktop-breakpoint) {
+//   .form__input {
+//     max-width: 448px;
+//   }
+// }
