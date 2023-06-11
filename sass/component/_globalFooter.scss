@@ -21,7 +21,7 @@
   margin-top: 20px;
 }
 
-@media screen and (min-width: 625px) {
+@media screen and (min-width: $tablet-breakpoint) {
   .button--subscribe {
     margin-top: 0;
   }
@@ -84,7 +84,13 @@
   height: 50px;
   margin-top: 20px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .global-footer__input {
+    width: 358px;
+  }
 }
 
 .icon--subscribe {
