@@ -1,3 +1,13 @@
+.form {
+  margin-top: 26px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .form {
+    margin-top: 12px;
+  }
+}
+
 .form__row {
   margin-top: 10px;
   &:first-of-type {
@@ -28,12 +38,19 @@
 }
 
 .form__icon {
+  color: #212121;
   height: 18px;
   position: absolute;
-  left: 55px;
+  left: 58px;
   transform: translateY(77%);
   transition: color var(--transition);
   width: 18px;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .form__icon {
+    left: 63px;
+  }
 }
 
 .form__input {
@@ -52,8 +69,8 @@
     border-color: var(--color-active);
     cursor: pointer;
   }
-  &:hover .form__icon,
-  &:focus .form__icon {
+  &:hover + .form__icon,
+  &:focus + .form__icon {
     color: var(--color-active);
   }
 }
