@@ -41,7 +41,7 @@
   color: #212121;
   height: 18px;
   position: absolute;
-  left: 58px;
+  left: 60px;
   transform: translateY(77%);
   transition: color var(--transition);
   width: 18px;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .form__icon {
-    left: 63px;
+    left: 70px;
   }
 }
 
@@ -63,7 +63,6 @@
   position: relative;
   transition: border-color var(--transition);
   width: 100%;
-  // max-width: 370px;
   &:hover,
   &:focus {
     border-color: var(--color-active);
@@ -86,9 +85,3 @@
     line-height: 1.14;
   }
 }
-
-// @media screen and (min-width: $desktop-breakpoint) {
-//   .form__input {
-//     max-width: 448px;
-//   }
-// }
