@@ -5,27 +5,29 @@
   padding: 48px 40px;
   position: relative;
   max-width: 100%;
+
+  &--is-open {
+    display: block;
+  }
 }
 
-.toggle-menu--is-open {
-  display: block;
-}
+.toggle-menu {
+  &__navigation-list,
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
-.toggle-menu__navigation-list,
-.toggle-menu__contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
+  &__navigation-list {
+    font-size: 40px;
+    line-height: 1.172;
+  }
 
-.toggle-menu__navigation-list {
-  font-size: 40px;
-  line-height: 1.172;
-}
-
-.toggle-menu__contacts-list {
-  line-height: 1.17;
-  margin-top: 306px;
+  &__contacts-list {
+    line-height: 1.17;
+    margin-top: 306px;
+  }
 }
 
 .toggle-menu__contacts-phone {
