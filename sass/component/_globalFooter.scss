@@ -17,16 +17,6 @@
   gap: 60px;
 }
 
-.button--subscribe {
-  margin-top: 20px;
-}
-
-@media screen and (min-width: $tablet-breakpoint) {
-  .button--subscribe {
-    margin-top: 0;
-  }
-}
-
 @media screen and (min-width: $tablet-breakpoint) {
   .global-footer__address-and-social-icons {
     flex-direction: row;
@@ -90,6 +80,16 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .global-footer__input {
     width: 358px;
+  }
+}
+
+.button--subscribe {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .button--subscribe {
+    margin-top: 0;
   }
 }
 
