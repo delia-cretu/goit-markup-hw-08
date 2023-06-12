@@ -16,48 +16,51 @@
 // Tablet and Desktop styles
 
 @media screen and (min-width: $tablet-breakpoint) {
-  .global-header__navigation,
-  .global-header__contacts {
-    display: block;
-  }
-  .global-header__navigation {
-    padding: 32px 0;
+  .global-header {
+    &__navigation,
+    &__contacts {
+      display: block;
+    }
+    &__logo-and-navigation,
+    &__menu,
+    &__contacts-list {
+      display: flex;
+    }
+    &__navigation {
+      padding: 32px 0;
+    }
+    &__menu {
+      margin-left: 93px;
+      gap: 50px;
+    }
+    &__contacts-list {
+      gap: 40px;
+    }
   }
 
-  .global-header__logo-and-navigation,
-  .global-header__menu,
-  .global-header__contacts-list {
-    display: flex;
-  }
-  .global-header__menu {
-    margin-left: 93px;
-    gap: 50px;
-  }
-  .global-header__contacts-list {
-    gap: 40px;
-  }
-
-  .icon--contacts {
-    margin-right: 10px;
-  }
-  .icon--email {
-    width: 20px;
-    height: 12px;
-  }
-  .icon--phone {
-    width: 10px;
-    height: 16px;
-    margin-left: 3px;
+  .icon {
+    &--contacts {
+      margin-right: 10px;
+    }
+    &--email {
+      width: 20px;
+      height: 12px;
+    }
+    &--phone {
+      width: 10px;
+      height: 16px;
+      margin-left: 3px;
+    }
   }
 }
 
 @media screen and (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
   .global-header__contacts {
     padding-top: 21px;
-  }
-  .global-header__contacts-list {
-    flex-direction: column;
-    gap: 5px;
+    &-list {
+      flex-direction: column;
+      gap: 5px;
+    }
   }
 }
 
